@@ -1,4 +1,4 @@
-package com.startuinativeapp;
+package com.startuinative.app;
 
 import com.facebook.react.ReactActivity;
 
