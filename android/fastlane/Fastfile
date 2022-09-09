@@ -40,7 +40,7 @@ platform :android do
     versionCode = google_play_track_version_codes(
       package_name: "com.startuinative.app",
       track: "internal",
-      json_key: ENV['GPLAY_SERVICE_ACCOUNT_KEY_JSON']
+      json_key: ENV['ANDROID_JSON_KEY_FILE']
     )
 
     puts "versionCode"
