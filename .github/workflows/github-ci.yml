@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Set environment
+        run: npm run set:env:prod
+
       - name: Run tests
         run: cd android && bundle exec fastlane android test
 
