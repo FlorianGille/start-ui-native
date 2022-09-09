@@ -1,0 +1,33 @@
+name: 🚀 Start UI [native]
+
+on:
+  push:
+    branches:
+      - feat-setup-fastlane
+  pull_request:
+
+jobs:
+  build-and-deploy-android:
+    name: Build and deploy for Android
+    runs-on: floriangille/gitlab-ci-android:0.0.4
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Install dependencies to Bundler
+        run: bundle install
+
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Install dependencies to mobile application
+        run: yarn install
+
+      - name: Set environment
+        run: yarn set:env:dev
+
+      - name: Deploy to Google Play Store
+        run: cd android && fastlane deploy
