@@ -54,7 +54,16 @@ platform :android do
     f.close
 
     # Build new bundle with new versionCode
-    gradle(task: "clean bundleRelease")
+    gradle(
+      task: "clean bundleRelease",
+      build_type: "release",
+      properties: {
+        "android.injected.signing.store.file" => ENV["KEYSTORE_FILE"],
+        "android.injected.signing.store.password" => ENV["STORE_PASSWORD"],
+        "android.injected.signing.key.alias" => ENV["KEY_ALIAS"],
+        "android.injected.signing.key.password" => ENV["KEY_PASSWORD"],
+      },
+    )
 
     # Upload new bundle to play store
     upload_to_play_store(
