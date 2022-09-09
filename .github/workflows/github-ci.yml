@@ -9,25 +9,19 @@ on:
 jobs:
   build-and-deploy-android:
     name: Build and deploy for Android
-    runs-on: floriangille/gitlab-ci-android:0.0.4
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install Bundler
-        run: gem install bundler
+      - name: Set up ruby env
+          uses: ruby/setup-ruby@v1
+          with:
+            ruby-version: 2.7.2
+            bundler-cache: true
 
-      - name: Install dependencies to Bundler
-        run: bundle install
+      - name: Run tests
+        run: cd android && bundle exec fastlane android test
 
-      - name: Install Yarn
-        run: npm install -g yarn
-
-      - name: Install dependencies to mobile application
-        run: yarn install
-
-      - name: Set environment
-        run: yarn set:env:dev
-
-      - name: Deploy to Google Play Store
-        run: cd android && fastlane deploy
+      - name: Build & deploy Android release
+        run: cd android && bundle exec fastlane android deploy
