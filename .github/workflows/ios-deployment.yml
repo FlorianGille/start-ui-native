@@ -1,0 +1,21 @@
+name: 🚀 Start UI [native] iOS
+
+on:
+  push:
+    branches:
+      - feat-setup-fastlane
+  pull_request:
+
+jobs:
+  deploy-ios:
+    name: Build and deploy for iOS
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up ruby env
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.2
+          bundler-cache: true

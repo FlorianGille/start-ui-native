@@ -1,4 +1,4 @@
-name: 🚀 Start UI [native]
+name: 🚀 Start UI [native] Android
 
 on:
   push:
@@ -37,9 +37,6 @@ jobs:
         with:
           fileName: "android_keystore.keystore"
           encodedString: ${{ secrets.KEYSTORE_FILE }}
-
-      - name: List files
-        run: ls
 
       - name: Install dependencies
         run: npm install
