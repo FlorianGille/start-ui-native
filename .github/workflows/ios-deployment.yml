@@ -9,7 +9,7 @@ on:
 jobs:
   deploy-ios:
     name: Build and deploy for iOS
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -24,17 +24,11 @@ jobs:
         with:
           node-version: 14
 
-      - name: Set iphoneos path
-        run: xcode-select --switch /Applications/Xcode.app
-
-      - name: Install Cocoapods
-        run: gem install cocoapods
-
       - name: Install dependencies
         run: npm install
 
       - name: Install iOS dependencies
-        run: cd ios && pod install
+        run: cd ios && bundle exec pod install
 
       - name: Build & deploy iOS release
         run: cd ios && bundle exec fastlane ios release
