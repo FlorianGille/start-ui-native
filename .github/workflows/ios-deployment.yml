@@ -23,5 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm install && cd ios && pod install
 
+      - name: Install iOS dependencies
+        run: cd ios && pod install
+
       - name: Build & deploy Android release
         run: cd ios && bundle exec fastlane ios release
