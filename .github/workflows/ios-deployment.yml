@@ -25,10 +25,10 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: npm install && cd ios && pod install
+        run: npm install
 
       - name: Install iOS dependencies
-        run: cd ios && pod install
+        run: cd ios && bundle exec pod install
 
       - name: Build & deploy Android release
         run: cd ios && bundle exec fastlane ios release
