@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: 14
 
+      - name: Install bundle dependencies
+        run: bundle install
+
       - name: Install dependencies
         run: npm install
 
