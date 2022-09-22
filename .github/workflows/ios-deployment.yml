@@ -19,3 +19,9 @@ jobs:
         with:
           ruby-version: 2.7.2
           bundler-cache: true
+
+      - name: Install dependencies
+        run: npm install && cd ios && pod install
+
+      - name: Build & deploy Android release
+        run: cd ios && bundle exec fastlane ios release
