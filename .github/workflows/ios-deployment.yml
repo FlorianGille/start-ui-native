@@ -91,4 +91,4 @@ jobs:
           KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
           PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
-          KEYCHAIN_PATH: $KEYCHAIN_PATH
+          KEYCHAIN_PATH: "/Users/runner/work/_temp/app-signing.keychain-db"
