@@ -69,17 +69,20 @@ platform :ios do
 
     cert(
       api_key: api_key,
-      keychain_path: ENV["ENCODED_CERTIFICATE_PATH"]
+      keychain_path: ENV["KEYCHAIN_PATH"]
     )
 
-    #sigh(
-    #  api_key: api_key,
-    #  app_identifier: app_identifier,
-    #  provisioning_name: profile_name,
-    #  force: true
-    #)
+    sigh(
+      api_key: api_key,
+      app_identifier: app_identifier,
+      provisioning_name: profile_name,
+    )
 
-    install_provisioning_profile(path: ENV["ENCODED_PROVISIONING_FILE_PATH"])
+    update_project_provisioning(
+      xcodeproj: "StartUINativeApp.xcodeproj",
+      target_filter: "StartUINativeApp",
+      build_configuration: "Release",
+    )
 
     build_app(workspace: "StartUINativeApp.xcworkspace", scheme: "StartUINativeApp")
   end

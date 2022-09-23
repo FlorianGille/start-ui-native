@@ -544,6 +544,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "418d5a7d-de9a-4b43-986a-3b37bbaa193e";
+				PROVISIONING_PROFILE_SPECIFIER = "com.startuinative.app AppStore";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StartUINativeApp.app/StartUINativeApp";
 			};
 			name = Release;
@@ -581,8 +583,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = MB3DYTWW42;
 				INFOPLIST_FILE = StartUINativeApp/Info.plist;
@@ -594,7 +596,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.startuinative.app;
 				PRODUCT_NAME = StartUINativeApp;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "418d5a7d-de9a-4b43-986a-3b37bbaa193e";
+				PROVISIONING_PROFILE_SPECIFIER = "com.startuinative.app AppStore";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

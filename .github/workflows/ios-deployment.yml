@@ -47,6 +47,14 @@ jobs:
           fileName: "provisioning.mobileprovision"
           encodedString: ${{ secrets.ENCODED_PROVISIONING_FILE }}
 
+      - name: Decode Provisioning base64 file
+        uses: timheuer/base64-to-file@v1
+        id: keychain_file
+        with:
+          fileName: "login.keychain-db"
+          encodedString: ${{ secrets.ENCODED_KEYCHAIN_FILE }}
+
+
       - name: Build & deploy iOS release
         run: cd ios && bundle exec fastlane ios release
         env:
@@ -55,3 +63,4 @@ jobs:
           PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
           ENCODED_CERTIFICATE_PATH: ${{ steps.certificate_file.outputs.filePath }}
           ENCODED_PROVISIONING_FILE_PATH: ${{ steps.provisioning_file.outputs.filePath }}
+          KEYCHAIN_PATH: ${{ steps.keychain_file.outputs.filePath }}
