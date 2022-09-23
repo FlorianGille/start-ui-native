@@ -15,6 +15,54 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
+### ios prepare_signing
+
+```sh
+[bundle exec] fastlane ios prepare_signing
+```
+
+Check certs and profiles
+
+### ios build_release
+
+```sh
+[bundle exec] fastlane ios build_release
+```
+
+Build the iOS app for release
+
+### ios upload_release
+
+```sh
+[bundle exec] fastlane ios upload_release
+```
+
+Upload to TestFlight / ASC
+
+### ios build_upload_testflight
+
+```sh
+[bundle exec] fastlane ios build_upload_testflight
+```
+
+Build and upload to TestFlight
+
+### ios load_asc_api_key
+
+```sh
+[bundle exec] fastlane ios load_asc_api_key
+```
+
+Load ASC API Key information to use in subsequent lanes
+
+### ios fetch_and_increment_build_number
+
+```sh
+[bundle exec] fastlane ios fetch_and_increment_build_number
+```
+
+Bump build number based on most recent TestFlight build number
+
 ### ios release
 
 ```sh

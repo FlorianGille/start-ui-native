@@ -18,7 +18,7 @@
     "android:bundle:dev": "yarn jetify && ./scripts/android-bundle.sh dev",
     "android:bundle:staging": "yarn jetify && ./scripts/android-bundle.sh staging",
     "android:bundle:prod": "yarn jetify && ./scripts/android-bundle.sh prod",
-    "ios": "react-native run-ios",
+    "ios": "react-native bundle --entry-file='index.ios.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'",
     "ios:open": "open ios/StartUINativeApp.xcworkspace",
     "ios:install:intel": "cd ios/ && pod install",
     "ios:install:arm": "cd ios/ && arch -x86_64 pod install",
