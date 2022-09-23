@@ -66,4 +66,4 @@ jobs:
           KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
           PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
-          KEYCHAIN_PATH: ~/Library/Keychains/signing_temp.keychain-db
+          KEYCHAIN_PATH: ~/Library/Keychains/login.keychain-db
