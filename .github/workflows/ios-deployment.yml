@@ -24,8 +24,8 @@ jobs:
         with:
           node-version: 14
 
-      # - name: Install bundle dependencies
-      #   run: cd ios && bundle install
+      - name: Install bundle dependencies
+        run: cd ios && bundle install
 
       # - name: Install dependencies
       #   run: npm install
