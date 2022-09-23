@@ -24,36 +24,35 @@ jobs:
         with:
           node-version: 14
 
-      - name: Install bundle dependencies
-        run: cd ios && bundle install
+      # - name: Install bundle dependencies
+      #   run: cd ios && bundle install
 
-      - name: Install dependencies
-        run: npm install
+      # - name: Install dependencies
+      #   run: npm install
 
-      - name: Install iOS dependencies
-        run: cd ios && pod install
+      # - name: Install iOS dependencies
+      #   run: cd ios && pod install
 
-      - name: Decode Certificate base64 file
-        uses: timheuer/base64-to-file@v1
-        id: certificate_file
-        with:
-          fileName: "certificate.cer"
-          encodedString: ${{ secrets.ENCODED_CERTIFICATE }}
+      # - name: Decode Certificate base64 file
+      #   uses: timheuer/base64-to-file@v1
+      #   id: certificate_file
+      #   with:
+      #     fileName: "certificate.cer"
+      #     encodedString: ${{ secrets.ENCODED_CERTIFICATE }}
 
-      - name: Decode Provisioning base64 file
-        uses: timheuer/base64-to-file@v1
-        id: provisioning_file
-        with:
-          fileName: "provisioning.mobileprovision"
-          encodedString: ${{ secrets.ENCODED_PROVISIONING_FILE }}
+      # - name: Decode Provisioning base64 file
+      #   uses: timheuer/base64-to-file@v1
+      #   id: provisioning_file
+      #   with:
+      #     fileName: "provisioning.mobileprovision"
+      #     encodedString: ${{ secrets.ENCODED_PROVISIONING_FILE }}
 
-      - name: Decode Provisioning base64 file
-        uses: timheuer/base64-to-file@v1
-        id: keychain_file
-        with:
-          fileName: "login.keychain-db"
-          encodedString: ${{ secrets.ENCODED_KEYCHAIN_FILE }}
-
+      # - name: Decode Provisioning base64 file
+      #   uses: timheuer/base64-to-file@v1
+      #   id: keychain_file
+      #   with:
+      #     fileName: "login.keychain-db"
+      #     encodedString: ${{ secrets.ENCODED_KEYCHAIN_FILE }}
 
       - name: Build & deploy iOS release
         run: cd ios && bundle exec fastlane ios release
@@ -61,6 +60,4 @@ jobs:
           KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
           PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
-          ENCODED_CERTIFICATE_PATH: ${{ steps.certificate_file.outputs.filePath }}
-          ENCODED_PROVISIONING_FILE_PATH: ${{ steps.provisioning_file.outputs.filePath }}
-          KEYCHAIN_PATH: ${{ steps.keychain_file.outputs.filePath }}
+          KEYCHAIN_PATH: ~/Library/Keychains/signing_temp.keychain-db
