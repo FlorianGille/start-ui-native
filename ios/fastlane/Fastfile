@@ -70,19 +70,13 @@ platform :ios do
     #   force: true # always recreate this exact profile to ensure it's valid and not expired
     # )
 
-    # turn off automatic signing during build so correct code signing identity is guaranteed to be used
     update_code_signing_settings(
       use_automatic_signing: true,
-      targets: ["StartUINativeApp"], # specify which targets to update code signing settings for
+      targets: ["StartUINativeApp"],
       bundle_identifier: app_identifier,
-      build_configurations: ["Release"] # only toggle code signing settings for Release configurations
+      build_configurations: ["Release"],
+      profile_name: "App Provisioning Profile"
     )
-
-    # update_project_provisioning(
-    #   xcodeproj: "StartUINativeApp.xcodeproj",
-    #   target_filter: "StartUINativeApp",
-    #   build_configuration: "Release",
-    # )
 
     build_app(
       workspace: "StartUINativeApp.xcworkspace",
