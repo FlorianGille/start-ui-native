@@ -73,6 +73,10 @@ platform :ios do
       team_id: "MB3DYTWW42"
     )
 
+    disable_automatic_code_signing
+
+    enable_automatic_code_signing
+
     build_app(
       workspace: "StartUINativeApp.xcworkspace",
       scheme: "StartUINativeApp",
