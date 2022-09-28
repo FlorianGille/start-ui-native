@@ -54,11 +54,6 @@ platform :ios do
     api_key = lane_context[SharedValues::APP_STORE_CONNECT_API_KEY]
     app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
 
-    profile_name = "App Provisioning Profile" # the name of the profile to use for the build
-    output_name = "startuinative-iOS" # specify the name of the .ipa file to generate
-    export_method = "app-store" # specify the export method
-    compile_bitcode = true # specify whether to enable bitcode
-
     cert(
       api_key: api_key,
       keychain_path: ENV["KEYCHAIN_PATH"]
@@ -76,7 +71,7 @@ platform :ios do
       bundle_identifier: app_identifier,
       build_configurations: ["Release"],
       profile_name: "App Provisioning Profile",
-      team_id: "85L5Y8WGFH"
+      team_id: "MB3DYTWW42"
     )
 
     build_app(
