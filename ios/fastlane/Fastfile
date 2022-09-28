@@ -76,7 +76,7 @@ platform :ios do
     build_app(
       workspace: "StartUINativeApp.xcworkspace",
       scheme: "StartUINativeApp",
-      xcargs: "-allowProvisioningUpdates"
+      xcargs: "-allowProvisioningUpdates -authenticationKeyID " + ENV["KEY_ID"] + " -authenticationKeyIssuerID " + ENV["ISSUER_ID"]
     )
   end
 end
