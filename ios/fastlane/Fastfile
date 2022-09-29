@@ -59,11 +59,11 @@ platform :ios do
       keychain_path: ENV["KEYCHAIN_PATH"]
     )
 
-    # sigh(
-    #   api_key: api_key,
-    #   app_identifier: app_identifier,
-    #   force: true # always recreate this exact profile to ensure it's valid and not expired
-    # )
+    sigh(
+      api_key: api_key,
+      app_identifier: app_identifier,
+      force: true
+    )
 
     update_code_signing_settings(
       use_automatic_signing: true,
