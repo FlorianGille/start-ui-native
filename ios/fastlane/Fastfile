@@ -78,6 +78,7 @@ platform :ios do
     build_app(
       workspace: "StartUINativeApp.xcworkspace",
       scheme: "StartUINativeApp",
+      export_method: "development",
       xcargs: "-allowProvisioningUpdates"
     )
   end
