@@ -92,3 +92,4 @@ jobs:
           ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
           PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
           KEYCHAIN_PATH: "/Users/runner/work/_temp/app-signing.keychain-db"
+          ACCESS_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN_GITHUB }}
