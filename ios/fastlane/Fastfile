@@ -19,9 +19,9 @@ platform :ios do
   desc "Load ASC API Key information to use in subsequent lanes"
   lane :load_asc_api_key do
     app_store_connect_api_key(
-      key_id: ENV["KEY_ID"],
-      issuer_id: ENV["ISSUER_ID"],
-      key_content: ENV["PRIVATE_KEY"],
+      key_id: "64XWW55U3Y",
+      issuer_id: "b7cef4ed-41fe-4f9f-af64-bc21d065e7d4",
+      key_content: "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JR1RBZ0VBTUJNR0J5cUdTTTQ5QWdFR0NDcUdTTTQ5QXdFSEJIa3dkd0lCQVFRZzZWckloZDQyb1Z0OG95TzIKLzlPblVlMjNIZTQ4enJlWGhjckJBQnBMZWxTZ0NnWUlLb1pJemowREFRZWhSQU5DQUFTMFVwbE9YYUxqTlNzYQpLWkxoa2NjR2hNY2t3WVJualUxUFhmaE1mWERES1U1RlFKejFiQUxQajdYZkhpNGxFb3NwMStUMTZUMklUZitFCkJZdlhONnVJCi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0=",
       is_key_content_base64: true,
       in_house: false # detecting this via ASC private key not currently supported
     )
@@ -65,13 +65,15 @@ platform :ios do
       force: true
     )
 
-    update_code_signing_settings(
-      use_automatic_signing: true,
-      targets: ["StartUINativeApp"],
-      bundle_identifier: app_identifier,
-      build_configurations: ["Release"],
-      team_id: "MB3DYTWW42"
-    )
+    # update_code_signing_settings(
+    #   use_automatic_signing: true,
+    #   targets: ["StartUINativeApp"],
+    #   bundle_identifier: app_identifier,
+    #   build_configurations: ["Release"],
+    #   team_id: "MB3DYTWW42"
+    # )
+
+    match(type: "appstore", readonly: true)
 
     build_app(
       workspace: "StartUINativeApp.xcworkspace",
