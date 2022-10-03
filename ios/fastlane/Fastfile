@@ -81,6 +81,11 @@ platform :ios do
       scheme: "StartUINativeApp",
       export_method: "app-store",
       xcargs: "-allowProvisioningUpdates"
+      export_options: {
+        provisioningProfiles: {
+          app_identifier => "match AppStore com.startuinative.app",
+        }
+      }
     )
   end
 end
