@@ -117,7 +117,7 @@
 				051342FE732CCD361A9B798F /* Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig */,
 				9A5D76EEBBE1402E484A8CD1 /* Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig */,
 			);
-			path = Pods;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
