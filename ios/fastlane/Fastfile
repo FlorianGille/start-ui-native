@@ -74,7 +74,11 @@ platform :ios do
       team_id: "MB3DYTWW42"
     )
 
-    match(type: "appstore", git_basic_authorization: ENV['ACCESS_TOKEN_GITHUB'])
+    match(
+      type: "appstore",
+      git_basic_authorization: ENV['ACCESS_TOKEN_GITHUB'],
+      keychain_password: ENV['MATCH_PASSWORD']
+    )
 
     build_app(
       workspace: "StartUINativeApp.xcworkspace",
