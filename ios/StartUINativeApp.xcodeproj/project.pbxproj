@@ -590,8 +590,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution: BearStudio (MB3DYTWW42)";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = MB3DYTWW42;
 				INFOPLIST_FILE = StartUINativeApp/Info.plist;
@@ -603,7 +603,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.startuinative.app;
 				PRODUCT_NAME = StartUINativeApp;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.startuinative.app";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
