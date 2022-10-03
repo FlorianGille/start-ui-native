@@ -66,12 +66,10 @@ platform :ios do
     #   force: true
     # )
 
-    update_code_signing_settings(
-      use_automatic_signing: false,
-      targets: ["StartUINativeApp"],
-      bundle_identifier: app_identifier,
-      build_configurations: ["Release"],
-      team_id: "MB3DYTWW42"
+    unlock_keychain(
+      path: ENV['KEYCHAIN_PATH'],
+      password: ENV['MATCH_PASSWORD'],
+      set_default: true
     )
 
     match(
@@ -80,10 +78,12 @@ platform :ios do
       keychain_password: ENV['MATCH_PASSWORD']
     )
 
-    unlock_keychain(
-      path: ENV['KEYCHAIN_PATH'],
-      password: ENV['MATCH_PASSWORD'],
-      set_default: true
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      targets: ["StartUINativeApp"],
+      bundle_identifier: app_identifier,
+      build_configurations: ["Release"],
+      team_id: "MB3DYTWW42"
     )
 
     build_app(
