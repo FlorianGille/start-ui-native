@@ -80,6 +80,12 @@ platform :ios do
       keychain_password: ENV['MATCH_PASSWORD']
     )
 
+    unlock_keychain(
+      path: ENV['KEYCHAIN_PATH'],
+      password: ENV['MATCH_PASSWORD'],
+      set_default: true
+    )
+
     build_app(
       workspace: "StartUINativeApp.xcworkspace",
       scheme: "StartUINativeApp",
