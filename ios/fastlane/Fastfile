@@ -83,7 +83,7 @@ platform :ios do
       xcargs: "-allowProvisioningUpdates"
       export_options: {
         provisioningProfiles: {
-          app_identifier => "match AppStore com.startuinative.app",
+          "com.startuinative.app" => "match AppStore com.startuinative.app",
         }
       }
     )
