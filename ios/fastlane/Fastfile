@@ -66,13 +66,13 @@ platform :ios do
     #   force: true
     # )
 
-    # update_code_signing_settings(
-    #   use_automatic_signing: true,
-    #   targets: ["StartUINativeApp"],
-    #   bundle_identifier: app_identifier,
-    #   build_configurations: ["Release"],
-    #   team_id: "MB3DYTWW42"
-    # )
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      targets: ["StartUINativeApp"],
+      bundle_identifier: app_identifier,
+      build_configurations: ["Release"],
+      team_id: "MB3DYTWW42"
+    )
 
     match(type: "appstore", git_basic_authorization: ENV['ACCESS_TOKEN_GITHUB'])
 
