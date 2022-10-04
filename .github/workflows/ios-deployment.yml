@@ -27,8 +27,8 @@ jobs:
       - name: Install bundle dependencies
         run: cd ios && bundle install
 
-      # - name: Install dependencies
-      #   run: npm install
+      - name: Install dependencies
+        run: npm install
 
       - name: Install iOS dependencies
         run: cd ios && pod install
