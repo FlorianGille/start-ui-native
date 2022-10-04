@@ -30,8 +30,8 @@ jobs:
       # - name: Install dependencies
       #   run: npm install
 
-      # - name: Install iOS dependencies
-      #   run: cd ios && pod install
+      - name: Install iOS dependencies
+        run: cd ios && pod install
 
       # - name: Decode Certificate base64 file
       #   uses: timheuer/base64-to-file@v1
