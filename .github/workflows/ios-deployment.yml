@@ -34,7 +34,7 @@ jobs:
         run: cd ios && pod install
 
       - name: Generate main.jsbundle
-        run: npm run ios
+        run: npm run set:env:prod && npm run ios
 
       # - name: Decode Certificate base64 file
       #   uses: timheuer/base64-to-file@v1
