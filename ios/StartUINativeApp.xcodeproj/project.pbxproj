@@ -12,7 +12,6 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3C477DDD7C9F66D0B25687F8 /* libPods-StartUINativeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDABBDE6AA50AC0E4107A2AC /* libPods-StartUINativeApp.a */; };
-		756BA34F28DCBDD400BE9FE4 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A8B89A724AF9D61C82B5277E /* libPods-StartUINativeApp-StartUINativeAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 006074D464635B21C24951D1 /* libPods-StartUINativeApp-StartUINativeAppTests.a */; };
 /* End PBXBuildFile section */
@@ -117,7 +116,6 @@
 				11B9BD08B0E329E109EB3963 /* Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig */,
 				7B3A4E7D5A27AED4386723AC /* Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -250,7 +248,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756BA34F28DCBDD400BE9FE4 /* main.jsbundle in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
