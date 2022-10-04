@@ -87,6 +87,8 @@ platform :ios do
       team_id: "MB3DYTWW42"
     )
 
+    setup_ci(timeout: 0)
+
     build_app(
       workspace: "StartUINativeApp.xcworkspace",
       scheme: "StartUINativeApp-Release",
