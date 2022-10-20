@@ -24,17 +24,17 @@ jobs:
         with:
           node-version: 14
 
-      # - name: Install bundle dependencies
-      #   run: cd ios && bundle install
+      - name: Install bundle dependencies
+        run: cd ios && bundle install
 
-      # - name: Install dependencies
-      #   run: npm install
+      - name: Install dependencies
+        run: npm install
 
-      # - name: Install iOS dependencies
-      #   run: cd ios && pod install
+      - name: Install iOS dependencies
+        run: cd ios && pod install
 
-      # - name: Generate main.jsbundle
-      #   run: npm run set:env:prod && npm run ios
+      - name: Generate main.jsbundle
+        run: npm run set:env:prod && npm run ios
 
       # - name: Decode Certificate base64 file
       #   uses: timheuer/base64-to-file@v1
