@@ -24,17 +24,17 @@ jobs:
         with:
           node-version: 14
 
-      - name: Install bundle dependencies
-        run: cd ios && bundle install
+      # - name: Install bundle dependencies
+      #   run: cd ios && bundle install
 
-      - name: Install dependencies
-        run: npm install
+      # - name: Install dependencies
+      #   run: npm install
 
-      - name: Install iOS dependencies
-        run: cd ios && pod install
+      # - name: Install iOS dependencies
+      #   run: cd ios && pod install
 
-      - name: Generate main.jsbundle
-        run: npm run set:env:prod && npm run ios
+      # - name: Generate main.jsbundle
+      #   run: npm run set:env:prod && npm run ios
 
       # - name: Decode Certificate base64 file
       #   uses: timheuer/base64-to-file@v1
@@ -80,6 +80,7 @@ jobs:
           # import certificate to keychain
           security import $CERTIFICATE_PATH -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
           security list-keychain -d user -s $KEYCHAIN_PATH
+          security set-key-partition-list -S apple-tool:,apple: -s -k $KEYCHAIN_PASSWORD $KEYCHAIN_PATH
 
       - name: Build & deploy iOS release
         run: cd ios && bundle exec fastlane ios release
