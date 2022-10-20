@@ -84,6 +84,8 @@ platform :ios do
       }
     )
 
+    ENV['ITMSTRANSPORTER_FORCE_ITMS_PACKAGE_UPLOAD'] = 'true'
+
     upload_to_testflight(skip_waiting_for_build_processing: true)
   end
 end
