@@ -90,3 +90,4 @@ jobs:
           KEYCHAIN_PATH: "/Users/runner/Library/Keychains/app-signing.keychain-db"
           ACCESS_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN_GITHUB }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}

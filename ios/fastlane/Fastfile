@@ -64,7 +64,7 @@ platform :ios do
       keychain_name: "app-signing.keychain-db"
     )
 
-    sh("security set-key-partition-list -S apple-tool:,apple: -k " + ENV['MATCH_PASSWORD'] + " app-signing.keychain-db")
+    sh("security set-key-partition-list -S apple-tool:,apple: -k " + ENV['KEYCHAIN_PASSWORD'] + " app-signing.keychain-db")
 
     update_code_signing_settings(
       use_automatic_signing: false,
