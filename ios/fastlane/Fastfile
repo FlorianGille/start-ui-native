@@ -1,0 +1,92 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Load ASC API Key information to use in subsequent lanes"*
+  lane :load_asc_api_key do
+    puts ENV['KEYCHAIN_PATH']
+    app_store_connect_api_key(
+      key_id: ENV['KEY_ID'],
+      issuer_id: ENV['ISSUER_ID'],
+      key_content: ENV['PRIVATE_KEY'],
+      is_key_content_base64: true,
+      in_house: false
+    )
+  end
+
+  desc "Bump build number based on most recent TestFlight build number"
+  lane :fetch_and_increment_build_number do
+  app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+  api_key = lane_context[SharedValues::APP_STORE_CONNECT_API_KEY]
+
+  current_version = get_version_number(
+    target: "StartUINativeApp"
+  )
+  latest_build_number = latest_testflight_build_number(
+    api_key: api_key,
+    version: current_version,
+    app_identifier: app_identifier
+  )
+  increment_build_number(
+    build_number: latest_build_number + 1,
+  )
+  end
+
+  desc "Push a new release build to the App Store"
+  lane :release do
+    xcversion(version: "13.2.1")
+    load_asc_api_key
+    fetch_and_increment_build_number
+
+    api_key = lane_context[SharedValues::APP_STORE_CONNECT_API_KEY]
+    app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+
+    # cert(
+    #   api_key: api_key,
+    #   keychain_path: ENV["KEYCHAIN_PATH"]
+    # )
+
+    # sigh(
+    #   api_key: api_key,
+    #   app_identifier: app_identifier,
+    #   force: true
+    # )
+    setup_ci(timeout: 0)
+
+    unlock_keychain(
+      path: ENV['KEYCHAIN_PATH'],
+      password: ENV['MATCH_PASSWORD'],
+      set_default: true
+    )
+
+    match(
+      type: "appstore",
+      git_basic_authorization: ENV['ACCESS_TOKEN_GITHUB'],
+      keychain_password: ENV['MATCH_PASSWORD'],
+      keychain_name: "app-signing.keychain-db"
+    )
+
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      targets: ["StartUINativeApp"],
+      bundle_identifier: app_identifier,
+      build_configurations: ["Release"],
+      team_id: "MB3DYTWW42"
+    )
+
+    build_app(
+      workspace: "StartUINativeApp.xcworkspace",
+      scheme: "StartUINativeApp-Release",
+      export_method: "app-store",
+      xcargs: "-allowProvisioningUpdates",
+      export_options: {
+        provisioningProfiles: {
+          app_identifier => "match AppStore com.startuinative.app",
+        }
+      }
+    )
+
+    ENV['ITMSTRANSPORTER_FORCE_ITMS_PACKAGE_UPLOAD'] = 'true'
+
+    upload_to_testflight(skip_waiting_for_build_processing: true)
+  end
+end

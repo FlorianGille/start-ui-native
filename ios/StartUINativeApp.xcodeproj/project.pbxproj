@@ -10,10 +10,12 @@
 		00E356F31AD99517003FC87E /* StartUINativeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* StartUINativeAppTests.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3C477DDD7C9F66D0B25687F8 /* libPods-StartUINativeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDABBDE6AA50AC0E4107A2AC /* libPods-StartUINativeApp.a */; };
+		7541258A28ECD6BF00984EAC /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 7541258928ECD6BF00984EAC /* main.jsbundle */; };
 		18CCD99E47AF3086651069E6 /* libPods-StartUINativeApp-StartUINativeAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B6F7EFCD4703CFE25E3E23 /* libPods-StartUINativeApp-StartUINativeAppTests.a */; };
-		4576C95FA37D9000652C9F09 /* libPods-StartUINativeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A48A6B3C927381EAE354C815 /* libPods-StartUINativeApp.a */; };
 		74CCD32728BEB31A00B9E3C1 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 74CCD32628BEB31A00B9E3C1 /* AppDelegate.mm */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A8B89A724AF9D61C82B5277E /* libPods-StartUINativeApp-StartUINativeAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 006074D464635B21C24951D1 /* libPods-StartUINativeApp-StartUINativeAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,24 +29,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		006074D464635B21C24951D1 /* libPods-StartUINativeApp-StartUINativeAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StartUINativeApp-StartUINativeAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356EE1AD99517003FC87E /* StartUINativeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartUINativeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* StartUINativeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartUINativeAppTests.m; sourceTree = "<group>"; };
+		11B9BD08B0E329E109EB3963 /* Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-StartUINativeApp-StartUINativeAppTests/Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* StartUINativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartUINativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = StartUINativeApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = StartUINativeApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = StartUINativeApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StartUINativeApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = StartUINativeApp/main.m; sourceTree = "<group>"; };
+		7541258928ECD6BF00984EAC /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		7B3A4E7D5A27AED4386723AC /* Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig"; path = "Target Support Files/Pods-StartUINativeApp-StartUINativeAppTests/Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5FE7CBD29D86ED1938EA1351 /* Pods-StartUINativeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartUINativeApp.debug.xcconfig"; path = "Target Support Files/Pods-StartUINativeApp/Pods-StartUINativeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		74CCD32628BEB31A00B9E3C1 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = StartUINativeApp/AppDelegate.mm; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = StartUINativeApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8618205AD86FC2EBBEF923AD /* Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-StartUINativeApp-StartUINativeAppTests/Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9F538E729EB428D8A00BFFBC /* Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig"; path = "Target Support Files/Pods-StartUINativeApp-StartUINativeAppTests/Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		A48A6B3C927381EAE354C815 /* libPods-StartUINativeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StartUINativeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2D8FC45241867405E5639E3 /* Pods-StartUINativeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartUINativeApp.release.xcconfig"; path = "Target Support Files/Pods-StartUINativeApp/Pods-StartUINativeApp.release.xcconfig"; sourceTree = "<group>"; };
-		D0B6F7EFCD4703CFE25E3E23 /* libPods-StartUINativeApp-StartUINativeAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StartUINativeApp-StartUINativeAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDABBDE6AA50AC0E4107A2AC /* libPods-StartUINativeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StartUINativeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68A1E95ACE833825A000920 /* Pods-StartUINativeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartUINativeApp.release.xcconfig"; path = "Target Support Files/Pods-StartUINativeApp/Pods-StartUINativeApp.release.xcconfig"; sourceTree = "<group>"; };
+		CA5119F1F7628938DF58A953 /* Pods-StartUINativeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartUINativeApp.debug.xcconfig"; path = "Target Support Files/Pods-StartUINativeApp/Pods-StartUINativeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -53,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CCD99E47AF3086651069E6 /* libPods-StartUINativeApp-StartUINativeAppTests.a in Frameworks */,
+				A8B89A724AF9D61C82B5277E /* libPods-StartUINativeApp-StartUINativeAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4576C95FA37D9000652C9F09 /* libPods-StartUINativeApp.a in Frameworks */,
+				3C477DDD7C9F66D0B25687F8 /* libPods-StartUINativeApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +91,7 @@
 		13B07FAE1A68108700A75B9A /* StartUINativeApp */ = {
 			isa = PBXGroup;
 			children = (
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				7541258928ECD6BF00984EAC /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -103,19 +106,19 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				A48A6B3C927381EAE354C815 /* libPods-StartUINativeApp.a */,
-				D0B6F7EFCD4703CFE25E3E23 /* libPods-StartUINativeApp-StartUINativeAppTests.a */,
+				BDABBDE6AA50AC0E4107A2AC /* libPods-StartUINativeApp.a */,
+				006074D464635B21C24951D1 /* libPods-StartUINativeApp-StartUINativeAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6B45280CAA1FF0E81E0BA54E /* Pods */ = {
+		6B72DF7B086EA6666807EB7A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5FE7CBD29D86ED1938EA1351 /* Pods-StartUINativeApp.debug.xcconfig */,
-				C2D8FC45241867405E5639E3 /* Pods-StartUINativeApp.release.xcconfig */,
-				8618205AD86FC2EBBEF923AD /* Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig */,
-				9F538E729EB428D8A00BFFBC /* Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig */,
+				CA5119F1F7628938DF58A953 /* Pods-StartUINativeApp.debug.xcconfig */,
+				C68A1E95ACE833825A000920 /* Pods-StartUINativeApp.release.xcconfig */,
+				11B9BD08B0E329E109EB3963 /* Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig */,
+				7B3A4E7D5A27AED4386723AC /* Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -136,7 +139,7 @@
 				00E356EF1AD99517003FC87E /* StartUINativeAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				6B45280CAA1FF0E81E0BA54E /* Pods */,
+				6B72DF7B086EA6666807EB7A /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -159,11 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "StartUINativeAppTests" */;
 			buildPhases = (
-				40EF315128D9360393B258B6 /* [CP] Check Pods Manifest.lock */,
+				355535DF1045303D2A75AD8A /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				A0E0E6B777A3B1589C50D334 /* [CP] Copy Pods Resources */,
+				BDF2259839275962B1EF8079 /* [CP] Embed Pods Frameworks */,
+				E9756D3FE0808721D1CBC258 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,13 +183,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "StartUINativeApp" */;
 			buildPhases = (
-				F952327D020220637FD2706C /* [CP] Check Pods Manifest.lock */,
+				E23A7BD0AA0D9E897E45A298 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				25CAE03FD2DF0DB9500FF033 /* [CP] Copy Pods Resources */,
+				AF56C70D05BF2EF085088214 /* [CP] Embed Pods Frameworks */,
+				9BD0B220FE9BAEA9CBD86E13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,10 +211,12 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = MB3DYTWW42;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = LA2Q2JCX63;
+						DevelopmentTeam = MB3DYTWW42;
 						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
@@ -246,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7541258A28ECD6BF00984EAC /* main.jsbundle in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -266,9 +274,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nexport NODE_BINARY=node\ncd $PROJECT_DIR/..\n./node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		25CAE03FD2DF0DB9500FF033 /* [CP] Copy Pods Resources */ = {
+		355535DF1045303D2A75AD8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StartUINativeApp-StartUINativeAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BD0B220FE9BAEA9CBD86E13 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,7 +348,43 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StartUINativeApp/Pods-StartUINativeApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		40EF315128D9360393B258B6 /* [CP] Check Pods Manifest.lock */ = {
+		AF56C70D05BF2EF085088214 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StartUINativeApp/Pods-StartUINativeApp-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StartUINativeApp/Pods-StartUINativeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDF2259839275962B1EF8079 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StartUINativeApp-StartUINativeAppTests/Pods-StartUINativeApp-StartUINativeAppTests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StartUINativeApp-StartUINativeAppTests/Pods-StartUINativeApp-StartUINativeAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23A7BD0AA0D9E897E45A298 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,14 +399,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StartUINativeApp-StartUINativeAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StartUINativeApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0E0E6B777A3B1589C50D334 /* [CP] Copy Pods Resources */ = {
+		E9756D3FE0808721D1CBC258 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -388,28 +454,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StartUINativeApp-StartUINativeAppTests/Pods-StartUINativeApp-StartUINativeAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F952327D020220637FD2706C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StartUINativeApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -464,15 +508,19 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8618205AD86FC2EBBEF923AD /* Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig */;
+			baseConfigurationReference = 11B9BD08B0E329E109EB3963 /* Pods-StartUINativeApp-StartUINativeAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB3DYTWW42;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = StartUINativeAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -481,18 +529,24 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StartUINativeApp.app/StartUINativeApp";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F538E729EB428D8A00BFFBC /* Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig */;
+			baseConfigurationReference = 7B3A4E7D5A27AED4386723AC /* Pods-StartUINativeApp-StartUINativeAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = MB3DYTWW42;
 				INFOPLIST_FILE = StartUINativeAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -501,20 +555,22 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StartUINativeApp.app/StartUINativeApp";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FE7CBD29D86ED1938EA1351 /* Pods-StartUINativeApp.debug.xcconfig */;
+			baseConfigurationReference = CA5119F1F7628938DF58A953 /* Pods-StartUINativeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LA2Q2JCX63;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = MB3DYTWW42;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = StartUINativeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -523,7 +579,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.startuinative.app;
 				PRODUCT_NAME = StartUINativeApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -534,14 +590,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2D8FC45241867405E5639E3 /* Pods-StartUINativeApp.release.xcconfig */;
+			baseConfigurationReference = C68A1E95ACE833825A000920 /* Pods-StartUINativeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LA2Q2JCX63;
+				CODE_SIGN_IDENTITY = "Apple Distribution: BearStudio (MB3DYTWW42)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = MB3DYTWW42;
 				INFOPLIST_FILE = StartUINativeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -549,9 +605,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.startuinative.app;
 				PRODUCT_NAME = StartUINativeApp;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.startuinative.app";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -585,8 +641,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = MB3DYTWW42;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -605,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
@@ -614,6 +673,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.startuinative.app";
 				PRODUCT_NAME = "";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
@@ -648,8 +708,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Distribution: BearStudio (MB3DYTWW42)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: BearStudio (MB3DYTWW42)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = MB3DYTWW42;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -661,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
@@ -669,6 +732,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.startuinative.app";
 				PRODUCT_NAME = "";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
